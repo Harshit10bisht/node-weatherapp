@@ -12,9 +12,10 @@ const forecast = (latitude, longitude, callback) => {
         }
         else {
             callback(undefined, 
-                "\nLocation is "+body.name+
-                "\nWeather is "+body.weather[0].main+
-                "\nDescription "+body.weather[0].description)
+                " Location : "+body.name+
+                ",\n Forecast : "+body.weather[0].description+
+                ",\n Temperature : "+body.main.temp + " Celsius" +
+                ",\n Humidity : "+body.main.humidity)
         }
     })
 }

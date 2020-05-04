@@ -24,7 +24,7 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Harshit'  
+        name: 'Harshit Bisht'  
     })
 })
 app.get('/about', (req, res) => {
@@ -36,8 +36,8 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        name: 'harshit Bisht',
-        helptext: 'This is some helpful text'
+        name: 'Harshit Bisht',
+        helptext: 'You can enter your location in the text-box to determine the weather forecast of that location, then press search for the results.'
     })
 })
 
